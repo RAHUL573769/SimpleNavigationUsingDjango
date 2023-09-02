@@ -5,8 +5,18 @@ from django.http import HttpResponse
 
 
 def contact(request):
-    return HttpResponse("This is Contact Us Page")
+    return HttpResponse(
+        """
+                        <h1>This is Contact Us Page</h1>
+                        <a href='/first/about/'>Go to About</a>
+                        """
+    )
 
 
 def about(request):
-    return HttpResponse("This is About Us Page")
+    return HttpResponse(
+        """
+                        <h1>This is About Us Page</h1>
+                        <a href='/first/contact/'>Go to Contact Us</a>
+                        """
+    )
