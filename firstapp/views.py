@@ -23,4 +23,4 @@ def about(request):
 
 
 def home(request):
-    return render(request, "index.html")
+    return render(request, "index1.html")
