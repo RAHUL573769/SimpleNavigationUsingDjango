@@ -20,3 +20,7 @@ def about(request):
                         <a href='/first/contact/'>Go to Contact Us</a>
                         """
     )
+
+
+def home(request):
+    return render(request, "index.html")
